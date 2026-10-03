@@ -7,7 +7,6 @@ local ATTRIBUTE_NAME = "HyperChromeAppliedName"
 local HYPERSHIFT_VALUE = "HyperShift"
 local RAINBOW_SPEED = 5
 
-print("[Jailbreak-Exact-Chassis]: Запуск финального оптимизированного контроллера...")
 
 local function findOriginalResource(resourceName)
     for _, obj in ipairs(game:GetDescendants()) do
@@ -20,9 +19,7 @@ end
 
 local originalShiftTemplate = findOriginalResource("HyperShiftAuraParticles")
 if originalShiftTemplate then
-    print("[Jailbreak-Exact-Chassis]: Оригинальные частицы успешно инициализированы!")
 else
-    warn("[Jailbreak-Exact-Chassis]: HyperShiftAuraParticles не найдены в проводнике.")
 end
 
 local activeGlows = {}
