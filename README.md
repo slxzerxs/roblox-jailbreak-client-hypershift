@@ -1,2 +1,16 @@
-
+- **Repo contents**: LICENSE (MIT), empty README, main script roblox-jailbreak-client-hypershift.lua.  
+- **Purpose**: client LocalScript that adds a dynamic "HyperShift" rainbow glow to player-owned vehicles in Roblox Jailbreak.  
+- **Entry point**: roblox-jailbreak-client-hypershift.lua.  
+- **How it works**: on RunService.Heartbeat it scans Workspace.Vehicles, detects vehicles where seat.PlayerName == LocalPlayer.Name, and marks them with an attribute.  
+- **Visuals**: clones a HyperShift particle/emitter (if present), attaches ExactHyperShiftGlow, updates emitter color each frame using HSV rainbow; sets parts to Ne- Repo contents: LICENSE (MIT), empty README, main script roblox-jailbreak-client-hypershift.lua.  
+- Purpose: client LocalScript that adds a dynamic "HyperShift" rainbow glow to player-owned vehicles in Roblox Jailbreak.  
+- Entry point: roblox-jailbreak-client-hypershift.lua.  
+- How it works: on RunService.Heartbeat it scans Workspace.Vehicles, detects vehicles where seat.PlayerName == LocalPlayer.Name, and marks them with an attribute.  
+- Visuals: clones a HyperShift particle/emitter (if present), attaches ExactHyperShiftGlow, updates emitter color each frame using HSV rainbow; sets parts to Neon and rainbow color.  
+- Persistence & cleanup: stores original materials to restore; destroys glow and clears attributes when vehicle is no longer owned.  
+- Dependencies/assumptions: expects a Vehicles folder, seat.PlayerName value, and a HyperShiftAuraParticles template in the game.  
+- **Missing**: no README or usage instructions.on and rainbow color.  
+- **Persistence & cleanup**: stores original materials to restore; destroys glow and clears attributes when vehicle is no longer owned.  
+- **Dependencies/assumptions**: expects a Vehicles folder, seat.PlayerName value, and a HyperShiftAuraParticles template in the game.  
+- **Missing**: no README or usage instructions.
 
